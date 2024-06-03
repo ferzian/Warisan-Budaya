@@ -9,7 +9,7 @@
             <li>
                 <a href="#informasi" id="chevron-down">Kategori<i data-feather="chevron-down"></i>
                     <ul class="dropdown">
-                        <li><a href="#">Musium</a></li>
+                        <li><a href="/musium">Musium</a></li>
                         <li><a href="#">Tarian</a></li>
                         <li><a href="#">Bangunan</a></li>
                     </ul>

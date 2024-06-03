@@ -30,7 +30,6 @@
 
     {{ $slot }}
 
-    <x-footer></x-footer>
 
     <!-- Feather Icons -->
     <script>
