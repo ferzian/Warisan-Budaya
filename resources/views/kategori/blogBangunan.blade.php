@@ -5,7 +5,7 @@
                 background-size: cover"></div>
                 <div class="content">
                     <h2>{{ $blogBangunan['title'] }}</h2>
-                    <p class="penulis">ditulis oleh <a href="#">Warisan Budaya</a>pada 1 April 2024</p>
+                    <p class="penulis">ditulis oleh <a href="#">Warisan Budaya</a>pada {{ $blogBangunan->created_at->diffForHumans }}</p>
                     <p>{{ $blogBangunan['desc1'] }}</p>
                     <img src="{{ $blogBangunan['image1'] }}" class="gambar1">
                     <p>{{ $blogBangunan['desc2'] }}</p>
