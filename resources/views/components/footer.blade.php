@@ -14,7 +14,7 @@
             </div>
             <div class="mb-3">
                 <label for="feedback" class="form-label">Feedback :</label>
-                <textarea class="form-control" name="feedback" rows="3" required></textarea>
+                <textarea class="form-control" name="feedback" rows="5" required></textarea>
             </div>
 
             <button type="submit" name="sent" class="btn btn-primary">Send</button>

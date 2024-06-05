@@ -7,7 +7,7 @@
     <title>Warisan Budaya</title>
 
     <!-- icon -->
-    <link rel="icon" href="../../Website Warisan Budaya/image/icon.png">
+    <link rel="icon" href="{{ asset('assets/image/icon.png') }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

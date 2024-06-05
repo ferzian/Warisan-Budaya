@@ -2,7 +2,7 @@
     <x-layout-blog>
         <div class="header">
             <div class="hero"
-                style="    background-image:url('{{ asset('assets/image/ntt/background.jpg') }}') ;
+                style="background-image:url('{{ asset('assets/image/ntt/background.jpg') }}') ;
             background-size: cover">
             </div>
             <div class="content">
