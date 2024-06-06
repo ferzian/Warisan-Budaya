@@ -9,16 +9,16 @@
 <body>
     <div class="login-container">
         <h2>Admin Login</h2>
-        <form action="" method="post">
+        <form action="" method="">
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="username">Username:</label>
+                <input type="username" id="username" name="username" required>
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <a href=""><button type="submit">Login</button></a>
+            <a href="/admin"><button type="submit">Login</button></a>
         </form>
     </div>
 </body>

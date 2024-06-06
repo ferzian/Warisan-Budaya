@@ -4,6 +4,7 @@
     <div class="navbar-nav">
         <ul>
             <li><a href="/">Beranda</a></li>
+            <li><a href="/posts">Blog</a></li>
             <li><a href="/galeri">Galeri</a></li>
             <li><a href="/about">Tentang Kami</a></li>
             <li>
@@ -11,7 +12,7 @@
                     <ul class="dropdown">
                         <li><a href="/musium">Musium</a></li>
                         <li><a href="#">Tarian</a></li>
-                        <li><a href="/bangunan">Bangunan</a></li>
+                        <li><a href="#">Bangunan</a></li>
                     </ul>
                 </a>
             </li>
@@ -20,7 +21,7 @@
 
     <div class="navbar-extra">
         <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="/login"><button>Login</button></a>
+        <a href="/admin"><button>Login</button></a>
         <a href="#" id="humburger-menu"><i data-feather="menu"></i></a>
     </div>
 </nav>

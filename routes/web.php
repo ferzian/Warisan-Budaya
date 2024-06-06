@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\bangunan;
+use App\Models\Post;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 
@@ -20,14 +20,16 @@ Route::get('/login', function () {
     return view('Main/login');
 });
 
-Route::get('/bangunan', function () {
-    return view('kategori/bangunan', ['bangunan' => Bangunan::all()]);
+Route::get('/admin', function () {
+    return view('Main/admin');
 });
 
-Route::get('/bangunan/{blogBangunan:title}', function (Bangunan $blogBangunan) {
-    // $blogBangunan = Bangunan::find($title);
+Route::get('/posts', function () {
+    return view('kategori/posts', ['posts' => Post::all()]);
+});
 
-    return view('kategori/blogBangunan', ['blogBangunan' => $blogBangunan]);
+Route::get('/posts/{post:title}', function (Post $post) {
+    return view('kategori/post', ['post' => $post]);
 });
 
 Route::get('/monas', function () {

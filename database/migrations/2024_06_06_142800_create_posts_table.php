@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('bangunans', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('title')->unique();
-            $table->text('bg-card');
-            $table->text('image1');
-            $table->text('image2');
+            // $table->text('bg-card');
+            // $table->text('image1');
+            // $table->text('image2');
             $table->text('desc1');
             $table->text('desc2');
             $table->text('desc3');
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('bangunans');
+        Schema::dropIfExists('posts');
     }
 };

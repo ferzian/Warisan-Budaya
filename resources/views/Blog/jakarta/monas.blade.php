@@ -1,4 +1,4 @@
-<x-layout-main-navbar>
+<x-layout-navbar-blog>
     <x-layout-blog>
             <div class="header">
                 <div class="hero" style="background-image:url('{{ asset('assets/image/jakarta/background.jpg') }}') ;
@@ -55,4 +55,4 @@
             </div>
         </div>
     </x-layout-blog>
-</x-layout-main-navbar>
+</x-layout-navbar-blog>
