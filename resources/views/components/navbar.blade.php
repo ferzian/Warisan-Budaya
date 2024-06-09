@@ -5,7 +5,6 @@
         <ul>
             <li><a href="/">Beranda</a></li>
             <li><a href="/posts">Blog</a></li>
-            <li><a href="/galeri">Galeri</a></li>
             <li><a href="/about">Tentang Kami</a></li>
             <li>
                 <a href="#informasi" id="chevron-down">Kategori<i data-feather="chevron-down"></i>
