@@ -21,7 +21,7 @@
 
     <div class="navbar-extra">
         <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="/admin"><button>Login</button></a>
+        <a href="/login"><button>Login</button></a>
         <a href="#" id="humburger-menu"><i data-feather="menu"></i></a>
     </div>
 </nav>

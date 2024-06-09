@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #950000;
     margin: 0;
     padding: 0;
 }
@@ -29,7 +29,7 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="email"],
+input[type="username"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
@@ -40,7 +40,7 @@ input[type="password"] {
 button {
     width: 80%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #950000;
     border: none;
     border-radius: 3px;
     color: #fff;
@@ -48,5 +48,6 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #95000076;
+    color : black;
 }
