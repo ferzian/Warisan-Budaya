@@ -1,12 +1,14 @@
 <?php
 
+use resources\views\Main\home;
 use App\Models\Post;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('Main/home');
 });
+
 
 Route::get('/galeri', function () {
     return view('Main/galeri');
