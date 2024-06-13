@@ -3,7 +3,7 @@
 
     <div class="navbar-nav">
         <ul>
-            <li><a href="/home">Beranda</a></li>
+            <li><a href="/">Beranda</a></li>
             <li><a href="/posts">Blog</a></li>
             <li><a href="/about">Tentang Kami</a></li>
             <li>

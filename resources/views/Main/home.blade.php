@@ -89,22 +89,25 @@
             <article class="card">
                 <div class="card-img"></div>
                 <a href="#">
-                    <div class="card-img-hover" style="background-image: url('')">
+                    <div class="card-img-hover"
+                        style="background-image: url('{{asset('assets/image/papua barat/gambar1.jpg')}}')">
                     </div>
                 </a>
                 <div class="card-info">
                     <span class="card-category">Bangunan</span>
                     <h5 class="card-title">Benteng Fort Du Bus, Papua Barat</h5>
-                    <p class="card-desc">Terletak di Bukittinggi, Sumatra Barat, Indonesia. Benteng ini adalah sisa-sisa
-                        peninggalan
-                        Belanda yang dibangun pada abad ke-19.</p>
+                    <p class="card-desc">Benteng Du Bus merupakan benteng pertama yang dibangun pemerintah kolonial
+                        Hindia Belanda pada tanggal 24 Agustus 1828, yang terletak di Teluk Triton di pantai barat daya
+                        Pulau Papua (sekarang di Kabupaten Kaimana, Papua Barat, Indonesia).
+                    </p>
                 </div>
             </article>
 
             <article class="card">
                 <div class="card-img"></div>
                 <a href="#">
-                    <div class="card-img-hover" style="background-image: url('{{asset{'assets/image/ntt/gamba1'}}}')">
+                    <div class="card-img-hover"
+                        style="background-image: url('{{asset('assets/image/ntt/gambar3.jpg')}}')">
                     </div>
                 </a>
                 <div class="card-info">
