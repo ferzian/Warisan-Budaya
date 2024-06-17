@@ -115,7 +115,7 @@
                     <h5 class="card-title">Museum Sumba, Nusa Tenggara Timur</h5>
                     <p class="card-desc">Terletak di Waingapu, Sumba Timur, Nusa Tenggara Timur, Indonesia. Museum ini
                         adalah tempat
-                        untuk mengeksplorasi kebudayaan dan warisan budaya unik dari pulau Sumba.</p>
+                        untuk mengeksplorasi kebudayaan dan warisan budaya unik dari Pulau Sumba.</p>
                 </div>
             </article>
         </section>

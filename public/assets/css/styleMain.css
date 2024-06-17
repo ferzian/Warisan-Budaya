@@ -364,6 +364,10 @@ textarea {
     transition: ease-in-out 0.2s;
 }
 
+.btn .btn-primary{
+    font-family: "Poppins", sans-serif;
+}
+
 /* kritik dan saran end */
 
 /* footer start */
