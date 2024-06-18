@@ -5,7 +5,8 @@
 
 body {
     font: 16px/28px 'poppins', sans-serif;
-    background-color: #eaeaea;
+    /* background-color: #eaeaea; */
+    background-image: url('../image/sativa.png');
     color: #333;
 }
 .container {
@@ -96,7 +97,7 @@ body {
     margin-bottom: 20px;
     font-size: 14px;
 }
-.footer {
+/* .footer {
     background-color: rgb(61, 60, 60);
     margin-bottom: 0;
     margin-left: 0;
@@ -110,4 +111,4 @@ body {
     font: bold, sans-serif, arial;
     margin: 0 ;
 
-}
+} */

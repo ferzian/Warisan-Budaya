@@ -30,6 +30,8 @@
 
     {{ $slot }}
 
+    <x-feedback></x-feedback>
+
     <x-footer></x-footer>
 
     <!-- Feather Icons -->
