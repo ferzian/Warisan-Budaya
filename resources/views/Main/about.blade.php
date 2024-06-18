@@ -88,15 +88,13 @@
         <article class="card">
             <div class="card-img"></div>
             <a href="#">
-                <div class="card-img-hover" style="background-image: url('{{asset('assets/image/ntt/gambar3.jpg')}}')">
+                <div class="card-img-hover" style="background-image: url('{{asset('assets/image/Barudak/ferzian.jpg')}}')">
                 </div>
             </a>
             <div class="card-info">
-                <span class="card-category">Museum</span>
-                <h5 class="card-title">Museum Sumba, Nusa Tenggara Timur</h5>
-                <p class="card-desc">Terletak di Waingapu, Sumba Timur, Nusa Tenggara Timur, Indonesia. Museum ini
-                    adalah tempat
-                    untuk mengeksplorasi kebudayaan dan warisan budaya unik dari pulau Sumba.</p>
+                <span class="card-category">Ferzian9</span>
+                <h5 class="card-title">M. Ferzian Safaridzaldi</h5>
+                <p class="card-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, suscipit reiciendis. Hic, accusamus voluptatem? Necessitatibus magnam repellendus quasi fuga quidem ipsam, laudantium voluptates blanditiis at quibusdam atque incidunt numquam minima.</p>
             </div>
         </article>
     </section>
