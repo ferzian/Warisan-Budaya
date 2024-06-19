@@ -16,8 +16,12 @@ return new class extends Migration
             $table->string('title')->unique();
             $table->text('bg-card');
             $table->text('hero-img');
+            $table->text('img');
             $table->text('category');
-            $table->text('desc');
+            $table->text('desc1');
+            $table->text('desc2');
+            $table->text('desc3');
+            $table->text('desc4');
             $table->timestamps();
         });
     }

@@ -2,14 +2,19 @@
     <x-layout-blog>
         <div class="container">
             <div class="header">
-                <div class="hero" style="background-image: url('{{ $post['hero-img'] }}'); background-size: cover;">
+                <div class="hero" style="background-image: url('{{ asset($post['hero-img']) }}');">
                 </div>
                 <div class="content">
                     <h2>{{ $post['title'] }}</h2>
-                    <p class="penulis">{{ $post['category'] }} | ditulis oleh <a href="#">Warisan Budaya</a>pada
+                    <p class="penulis"><a href="#">{{ $post['category'] }}</a> | ditulis oleh <a
+                        href="#">Warisan Budaya</a>pada {{ $post->created_at->format('d F Y') }}
                     </p>
-                    {{-- {{ $post->created_at->format('d F Y') }} --}}
-                    <p>{{ $post['desc'] }}</p>
+                    <p>{{ $post['desc1'] }}</p> <br>
+                    <p>{{ $post['desc2'] }}</p><br>
+                    <img src="{{ asset($post['img']) }}" alt="">
+                    <p>{{ $post['desc3'] }}</p><br>
+                    <p>{{ $post['desc4'] }}</p><br>
+
                 </div>
             </div>
         </div>
