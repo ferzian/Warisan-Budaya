@@ -17,7 +17,10 @@ return new class extends Migration
             $table->text('bg-card');
             $table->text('hero-img');
             $table->text('img');
-            $table->text('category');
+            $table->foreignId('category_id')->constrained(
+                table: 'categories',
+                indexName: 'posts_category_id'
+            );
             $table->text('desc1');
             $table->text('desc2');
             $table->text('desc3');

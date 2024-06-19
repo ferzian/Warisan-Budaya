@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -21,7 +22,7 @@ class PostFactory extends Factory
             'bg-card' => fake()->imageUrl(),
             'hero-img' => fake()->imageUrl(),
             'img' => fake()->imageUrl(),
-            'category' => fake()->sentence(1),
+            'category_id' => Category::factory(),
             'desc1' => fake()->paragraph(4),
             'desc2' => fake()->paragraph(4),
             'desc3' => fake()->paragraph(4),

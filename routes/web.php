@@ -1,11 +1,13 @@
 <?php
 
 use App\Models\Post;
-use Illuminate\Support\Arr;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('Main/home');
+    $posts = Post::latest()->take(5)->get();
+    return view('Main/home', ['home' => $posts]);
+    // return view('Main/home');
 });
 
 Route::get('/about', function () {
@@ -21,7 +23,8 @@ Route::get('/admin', function () {
 });
 
 Route::get('/posts', function () {
-    return view('kategori/posts', ['posts' => Post::all()]);
+    $posts = Post::latest()->get();
+    return view('kategori/posts', ['posts' => $posts]);
 });
 
 Route::get('/posts/{post:title}', function (Post $post) {
@@ -30,4 +33,8 @@ Route::get('/posts/{post:title}', function (Post $post) {
 
 Route::get('/musium', function () {
     return view('/Main/halamanMusium');
+});
+
+Route::get('/categories/{category:name}', function (Category $category){
+    return view('kategori/posts', ['posts' => $category->posts]);
 });

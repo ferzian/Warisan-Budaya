@@ -6,8 +6,8 @@
                 </div>
                 <div class="content">
                     <h2>{{ $post['title'] }}</h2>
-                    <p class="penulis"><a href="#">{{ $post['category'] }}</a> | ditulis oleh <a
-                        href="#">Warisan Budaya</a>pada {{ $post->created_at->format('d F Y') }}
+                    <p class="penulis"><a href="/categories/{{ $post->category->name }}">{{ $post->category->name }}</a> | ditulis oleh <a
+                        href="/about">Warisan Budaya</a>pada {{ $post->created_at->format('d F Y') }}
                     </p>
                     <p>{{ $post['desc1'] }}</p> <br>
                     <p>{{ $post['desc2'] }}</p><br>
