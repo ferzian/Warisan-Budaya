@@ -70,7 +70,7 @@
 
         <article class="card">
             <div class="card-img"></div>
-            <a href="https://www.instagram.com/ridho.dnn/">
+            <a target="_blank" href="https://www.instagram.com/ridho.dnn/">
                 <div class="card-img-hover"
                     style="background-image: url('{{asset('assets/image/Barudak/dhow2.jpg')}}')">
                 </div>
@@ -87,7 +87,7 @@
 
         <article class="card">
             <div class="card-img"></div>
-            <a href="#">
+            <a href="https://www.instagram.com/ferzian9/">
                 <div class="card-img-hover" style="background-image: url('{{asset('assets/image/Barudak/ferzian.jpg')}}')">
                 </div>
             </a>

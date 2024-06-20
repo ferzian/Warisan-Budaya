@@ -19,7 +19,6 @@
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <!-- My Styles -->
 
 </head>
 
