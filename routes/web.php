@@ -5,6 +5,7 @@ use App\Models\Category;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FeedbackController;
 
 Route::get('/', function () {
     $posts = Post::latest()->take(6)->get();
@@ -45,3 +46,5 @@ Route::get('/login', [LoginController::class, 'index']);
 
 Route::get('/Register', [RegisterController::class, 'index']);
 Route::post('/Register', [RegisterController::class, 'store']);
+
+Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
