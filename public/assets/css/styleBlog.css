@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 16px/28px 'poppins', sans-serif;
+    /* background-color: #eaeaea; */
+    background-image: url('../image/sativa.png');
+    color: #333;
+}
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+}
+
+.header {
+    padding: 20px;
+    padding-bottom: 2px;
+}
+
+.judul span {
+    color: red;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(15, 156, 238);
+    padding: 3px;
+}
+
+.header a:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.hero {
+    border-top: 5px solid rgb(255, 0, 0);
+    border-bottom: 5px solid rgb(255, 0, 0);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    width: 760px;
+    height: 500px;
+}
+
+.content {
+    padding: 10px;
+}
+
+.content img {
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: 30 -10;
+    border-top: 5px solid gray;
+    border-bottom: 5px solid black;
+}
+
+.content h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content .penulis {
+    font-size: 11px;
+}
+
+.content .penulis a {
+    color: rgb(70, 13, 226);
+    text-decoration: none;
+}
+.content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+/* .footer {
+    background-color: rgb(61, 60, 60);
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 15px;
+    font: bold, sans-serif, arial;
+    margin: 0 ;
+
+} */

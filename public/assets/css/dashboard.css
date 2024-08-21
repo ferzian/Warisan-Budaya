@@ -1,0 +1,189 @@
+:root {
+    --primary: #fffbfb;
+    --bg: rgb(255, 255, 255);
+    --bgcard: #ebebeb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #000;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: black;
+    box-shadow: 5px 0px 10px -2px black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0px;
+    z-index: 9999;
+    text-align: center;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-logo span {
+    color: #ff0000;
+}
+
+.navbar .navbar-extra a:hover {
+    color: #ff0000;
+    transition: 0.2s;
+}
+
+.navbar .navbar-extra .logout button {
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 10px;
+    font-weight: bolder;
+    width: 8rem;
+}
+
+.navbar .navbar-extra .logout button:hover {
+    color: red;
+    background-color: rgb(50, 50, 50);
+}
+
+/* Container untuk mengatur tata letak */
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* Tombol Tambah Data */
+.btn-add {
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add:hover {
+    background-color: #0056b3;
+}
+
+/* Tabel CRUD */
+.crud-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.crud-table th,
+.crud-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.crud-table th {
+    background-color: #f2f2f2;
+}
+
+.crud-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.crud-table .action-buttons button {
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #007bff;
+    
+}
+
+.crud-table .action-buttons button:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #999;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-group .btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cancel {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-group .btn-submit:hover {
+    background-color: #0056b3;
+}
+.cancel {
+    background-color: #ff0000b4;
+}

@@ -1,0 +1,401 @@
+/* Inisialisasi warna dalam selector root */
+:root {
+    --primary: #fffbfb;
+    --bg: rgb(255, 255, 255);
+    --bgcard: #ebebeb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: black;
+    box-shadow: 5px 0px 10px -2px black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0px;
+    z-index: 9999;
+    text-align: center;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-logo span {
+    color: #ff0000;
+}
+
+.navbar-nav ul {
+    list-style: none;
+    background: black;
+}
+
+.navbar-nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar-nav ul li a {
+    display: block;
+    color: white;
+    padding: 8px 25px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar-nav ul li ul.dropdown li {
+    display: block;
+}
+
+.navbar-nav ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    /* z-index: 999; */
+    display: none;
+}
+
+.navbar-nav ul li a:hover {
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+}
+
+.navbar-nav ul li:hover ul.dropdown {
+    display: block;
+}
+
+.navbar .navbar-nav.navbar-nav #chevron-down .aktif {
+    display: inline-block;
+}
+
+.navbar .navbar-nav a:hover {
+    color: red;
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-extra a {
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a button {
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 10px;
+    font-weight: bolder;
+    width: 8rem;
+
+}
+
+.navbar .navbar-extra a button:hover {
+    color: red;
+    background-color: rgb(50, 50, 50);
+}
+
+.navbar .navbar-extra a:hover {
+    color: #ff0000;
+    transition: 0.2s;
+}
+
+.navbar .navbar-extra .logout button{
+    /* border-radius: 10px;
+    padding: 10px;
+    font-weight: bolder; */
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 10px;
+    font-weight: bolder;
+    width: 8rem;
+}
+
+.navbar .navbar-extra .logout button:hover{
+    /* background-color: #ff0000;
+    cursor: pointer; */
+    color: red;
+    background-color: rgb(50, 50, 50);
+}
+
+#humburger-menu {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    color: black;
+}
+
+.hero .content h1 {
+    font-size: 4em;
+    line-height: 1.1;
+    text-shadow: 1px 1px 1px rgb(124, 122, 122);
+}
+
+.hero .content p {
+    margin-left: 0.5rem;
+}
+
+.hero .content p span {
+    color: #ff0000;
+}
+
+.hero .content h1 span {
+    color: #ff0000;
+    font-size: 1em;
+}
+
+/* Responsive */
+
+/* Tablet */
+@media (max-width: 991.98px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #humburger-menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: black;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav ul {
+        display: block;
+        background-color: black;
+        margin: 1.5rem;
+        padding: 5px 25px;
+        font-size: 2rem;
+    }
+
+    .navbar .navbar-nav ul li ul.dropdown {
+        padding: 20px 25px;
+    }
+}
+
+/* HP */
+@media (max-width: 575.98px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+.hero .content {
+    top: 50%;
+}
+
+/* card start*/
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5em;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.card {
+    margin-right: 100px;
+    background-color: var(--bgcard);
+    width: 300px;
+    height: 470px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px #000;
+    margin-bottom: 30px;
+}
+
+.card-img {
+    width: 100%;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-img-hover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    top: 0;
+    transition: 0.2s all ease-out;
+}
+
+.card:hover .card-img-hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover {
+    box-shadow: 0px 30px 18px -8px #000;
+    transform: scale(1.1, 1.1);
+}
+
+.card-info {
+    background-color: var(--bgcard);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 16px 24px 24px 24px;
+}
+
+.card-category {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-style: 500;
+    color: #868686;
+}
+
+.card-title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.card-desc {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: black;
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        width: 20em;
+        display: block;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+    }
+}
+/* card end */
+
+/* btn crud start */
+.btn-crud button {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn-crud button:hover {
+    color: black;
+    background-color: rgb(236, 99, 99);
+    transition: ease-in-out 0.2s;
+}
+
+/* btn crud end */
+
+/* kritik dan saran start */
+
+.container-saran {
+    background-color: #999999;
+    padding: 30px;
+    background-image: linear-gradient(white, black);
+}
+
+.container-saran h2 {
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+}
+
+.container-saran label {
+    font-weight: 400;
+    color: rgb(46, 46, 46);
+}
+
+.container-saran input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(54, 54, 54);
+}
+
+.container-saran .input {
+    margin-bottom: 20px;
+    color: rgb(54, 54, 54);
+}
+
+.container-saran button {
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    background-color: rgb(175, 174, 174);
+    cursor: pointer;
+}
+
+.container-saran button:hover {
+    background-color: rgb(255, 255, 255);
+    transition: ease-in-out 0.2s;
+}
+
+.btn .btn-primary{
+    font-family: "Poppins", sans-serif;
+}
+
+/* kritik dan saran end */
+
+/* footer start */
+.footer {
+    background-color: #000;
+    text-align: center;
+}
+
+.footer p {
+    color: #fff;
+    padding: 20px;
+}
+/* footer end */
